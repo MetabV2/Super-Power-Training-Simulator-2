@@ -1,0 +1,717 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local InsertedObjects = Instance.new("ScreenGui")
+local Gradient = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Button1 = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Button3 = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Button2 = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Button_2 = Instance.new("TextButton")
+local Shadow_5 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local Button_3 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Shadow_6 = Instance.new("Frame")
+local Button_4 = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Shadow_7 = Instance.new("Frame")
+local Button_5 = Instance.new("TextButton")
+local Shadow_8 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local Button_6 = Instance.new("TextButton")
+local Shadow_9 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local CloseButton = Instance.new("ImageButton")
+
+--Properties:
+
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Gradient.Name = "Gradient"
+Gradient.Parent = InsertedObjects
+Gradient.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
+Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient.BorderSizePixel = 5
+Gradient.Position = UDim2.new(0.345923603, 0, 0.185618728, 0)
+Gradient.Size = UDim2.new(0, 200, 0, 376)
+
+ScrollingFrame.Parent = Gradient
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(0, 200, 0, 376)
+
+Button1.Name = "Button1"
+Button1.Parent = ScrollingFrame
+Button1.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button1.BorderSizePixel = 0
+Button1.Position = UDim2.new(0.0709219873, 0, 0.00668895105, 0)
+Button1.Size = UDim2.new(0, 171, 0, 45)
+Button1.ZIndex = 2
+Button1.Font = Enum.Font.GothamSemibold
+Button1.Text = ""
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextScaled = true
+Button1.TextSize = 14.000
+Button1.TextWrapped = true
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Button1
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel.Parent = Button1
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Auto Punch"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Button3.Name = "Button3"
+Button3.Parent = ScrollingFrame
+Button3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button3.BorderSizePixel = 0
+Button3.Position = UDim2.new(0.0709219873, 0, 0.0811570361, 0)
+Button3.Size = UDim2.new(0, 171, 0, 45)
+Button3.ZIndex = 2
+Button3.Font = Enum.Font.GothamSemibold
+Button3.Text = ""
+Button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button3.TextScaled = true
+Button3.TextSize = 14.000
+Button3.TextWrapped = true
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Button3
+Shadow_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_2.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_2.Parent = Button3
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Auto Agility"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Button2.Name = "Button2"
+Button2.Parent = ScrollingFrame
+Button2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button2.BorderSizePixel = 0
+Button2.Position = UDim2.new(0.0709219873, 0, 0.159614474, 0)
+Button2.Size = UDim2.new(0, 171, 0, 45)
+Button2.ZIndex = 2
+Button2.Font = Enum.Font.GothamSemibold
+Button2.Text = ""
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextScaled = true
+Button2.TextSize = 14.000
+Button2.TextWrapped = true
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Button2
+Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_3.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_3.Parent = Button2
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Auto PushUp"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Button.Name = "Button"
+Button.Parent = ScrollingFrame
+Button.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.0709219873, 0, 0.404295325, 0)
+Button.Size = UDim2.new(0, 171, 0, 45)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamSemibold
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = Button
+Shadow_4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_4.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_4.Parent = Button
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
+TextLabel_4.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "Coming soon"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Button_2.Name = "Button"
+Button_2.Parent = ScrollingFrame
+Button_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0.0709219873, 0, 0.485412359, 0)
+Button_2.Size = UDim2.new(0, 171, 0, 45)
+Button_2.ZIndex = 2
+Button_2.Font = Enum.Font.GothamSemibold
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextScaled = true
+Button_2.TextSize = 14.000
+Button_2.TextWrapped = true
+
+Shadow_5.Name = "Shadow"
+Shadow_5.Parent = Button_2
+Shadow_5.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_5.BorderSizePixel = 0
+Shadow_5.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_5.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_5.Parent = Button_2
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
+TextLabel_5.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "Coming soon"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+Button_3.Name = "Button"
+Button_3.Parent = ScrollingFrame
+Button_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_3.BorderSizePixel = 0
+Button_3.Position = UDim2.new(0.0709219873, 0, 0.570518732, 0)
+Button_3.Size = UDim2.new(0, 171, 0, 45)
+Button_3.ZIndex = 2
+Button_3.Font = Enum.Font.GothamSemibold
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.TextScaled = true
+Button_3.TextSize = 14.000
+Button_3.TextWrapped = true
+
+TextLabel_6.Parent = Button_3
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
+TextLabel_6.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.GothamSemibold
+TextLabel_6.Text = "Coming soon"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Shadow_6.Name = "Shadow"
+Shadow_6.Parent = Button_3
+Shadow_6.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_6.BorderSizePixel = 0
+Shadow_6.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_6.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+Button_4.Name = "Button"
+Button_4.Parent = ScrollingFrame
+Button_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_4.BorderSizePixel = 0
+Button_4.Position = UDim2.new(0.0709219873, 0, 0.655625105, 0)
+Button_4.Size = UDim2.new(0, 171, 0, 45)
+Button_4.ZIndex = 2
+Button_4.Font = Enum.Font.GothamSemibold
+Button_4.Text = ""
+Button_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_4.TextScaled = true
+Button_4.TextSize = 14.000
+Button_4.TextWrapped = true
+
+TextLabel_7.Parent = Button_4
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
+TextLabel_7.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = "Coming soon"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+Shadow_7.Name = "Shadow"
+Shadow_7.Parent = Button_4
+Shadow_7.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_7.BorderSizePixel = 0
+Shadow_7.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_7.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+Button_5.Name = "Button"
+Button_5.Parent = ScrollingFrame
+Button_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_5.BorderSizePixel = 0
+Button_5.Position = UDim2.new(0.0709219873, 0, 0.238071918, 0)
+Button_5.Size = UDim2.new(0, 171, 0, 45)
+Button_5.ZIndex = 2
+Button_5.Font = Enum.Font.GothamSemibold
+Button_5.Text = ""
+Button_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.TextScaled = true
+Button_5.TextSize = 14.000
+Button_5.TextWrapped = true
+
+Shadow_8.Name = "Shadow"
+Shadow_8.Parent = Button_5
+Shadow_8.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_8.BorderSizePixel = 0
+Shadow_8.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_8.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_8.Parent = Button_5
+TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_8.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = "Coming soon"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+Button_6.Name = "Button"
+Button_6.Parent = ScrollingFrame
+Button_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_6.BorderSizePixel = 0
+Button_6.Position = UDim2.new(0.0709219873, 0, 0.319188952, 0)
+Button_6.Size = UDim2.new(0, 171, 0, 45)
+Button_6.ZIndex = 2
+Button_6.Font = Enum.Font.GothamSemibold
+Button_6.Text = ""
+Button_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_6.TextScaled = true
+Button_6.TextSize = 14.000
+Button_6.TextWrapped = true
+
+Shadow_9.Name = "Shadow"
+Shadow_9.Parent = Button_6
+Shadow_9.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_9.BorderSizePixel = 0
+Shadow_9.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_9.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_9.Parent = Button_6
+TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_9.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.GothamSemibold
+TextLabel_9.Text = "Coming soon"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = Gradient
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 255, 217)
+TextLabel_10.BorderSizePixel = 5
+TextLabel_10.Position = UDim2.new(0, 0, -0.0936543867, 0)
+TextLabel_10.Size = UDim2.new(0, 199, 0, 50)
+TextLabel_10.Font = Enum.Font.GothamBlack
+TextLabel_10.Text = "BY NOCTURNEMODZ"
+TextLabel_10.TextColor3 = Color3.fromRGB(85, 255, 127)
+TextLabel_10.TextSize = 18.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Gradient
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 255, 217)
+TextLabel_11.BorderSizePixel = 5
+TextLabel_11.Position = UDim2.new(-0.0450000018, 0, -0.0936543867, 0)
+TextLabel_11.Size = UDim2.new(0, 218, 0, 50)
+TextLabel_11.Font = Enum.Font.GothamBlack
+TextLabel_11.Text = "BY NOCTURNEMODZ"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextSize = 17.000
+TextLabel_11.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Gradient
+CloseButton.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(1.00272465, 0, -0.00527913496, 0)
+CloseButton.Size = UDim2.new(0.0772084743, 0, 0.0371540226, 0)
+CloseButton.Image = "rbxassetid://6928031664"
+
+-- Scripts:
+
+local function JRJNH_fake_script() -- Gradient.LocalScript 
+	local script = Instance.new('LocalScript', Gradient)
+
+	
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(JRJNH_fake_script)()
+local function YJGX_fake_script() -- Button1.LocalScript 
+	local script = Instance.new('LocalScript', Button1)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+				wait()
+	
+					for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+						if v.name == "Punch" then
+							v.Parent = game.Players.LocalPlayer.Character
+					end
+				end
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("Punch")
+			end
+		end
+		if toggle == false then 
+			_G.Toggle = false
+			while _G.Toggle do
+				wait()
+	
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "Punch" then
+						v.Parent = game.Players.LocalPlayer.Character
+					
+						game:GetService("ReplicatedStorage").StatEvent:FireServer("Punch")
+					end
+					end
+			end
+		end
+	end)
+end
+coroutine.wrap(YJGX_fake_script)()
+local function UQQHJU_fake_script() -- Button3.Script 
+	local script = Instance.new('Script', Button3)
+
+	local button = script.Parent
+	
+	local function onButtonActivated()
+		while wait() do
+			game:GetService("ReplicatedStorage").StatEvent:FireServer("wlok")
+		end
+	
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+	
+	
+	
+end
+coroutine.wrap(UQQHJU_fake_script)()
+local function KAONCE_fake_script() -- Button3.LocalScript 
+	local script = Instance.new('LocalScript', Button3)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+				wait()
+	
+					for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "wlok" then
+							v.Parent = game.Players.LocalPlayer.Character
+					end
+				end
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("wlok")
+			end
+		end
+		if toggle == false then 
+			_G.Toggle = false
+			while _G.Toggle do
+				wait()
+	
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "wlok" then
+						v.Parent = game.Players.LocalPlayer.Character
+					
+						game:GetService("ReplicatedStorage").StatEvent:FireServer("wlok")
+					end
+					end
+			end
+		end
+	end)
+end
+coroutine.wrap(KAONCE_fake_script)()
+local function MTMB_fake_script() -- Button2.LocalScript 
+	local script = Instance.new('LocalScript', Button2)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+				wait()
+	
+					for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "PushUp" then
+							v.Parent = game.Players.LocalPlayer.Character
+					end
+				end
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("PushUp")
+			end
+		end
+		if toggle == false then 
+			_G.Toggle = false
+			while _G.Toggle do
+				wait()
+	
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "PushUp" then
+						v.Parent = game.Players.LocalPlayer.Character
+					
+						game:GetService("ReplicatedStorage").StatEvent:FireServer("PushUp")
+					end
+					end
+			end
+		end
+	end)
+end
+coroutine.wrap(MTMB_fake_script)()
+local function XNJIQAZ_fake_script() -- TextLabel_10.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_10)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (255, 176, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (0, 255, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (170, 85, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (106, 57, 9)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (0, 16, 176)
+		wait(.7)
+	end
+end
+coroutine.wrap(XNJIQAZ_fake_script)()
+local function NOQLA_fake_script() -- CloseButton.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(NOQLA_fake_script)()
+local function QZYJCK_fake_script() -- Gradient.LocalScript 
+	local script = Instance.new('LocalScript', Gradient)
+
+	while true do
+		script.Parent.BackgroundColor3 = Color3.new (255, 176, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (0, 255, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (255, 0, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (170, 85, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (106, 57, 9)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (0, 16, 176)
+		wait(.7)
+	end
+end
+coroutine.wrap(QZYJCK_fake_script)()
