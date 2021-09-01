@@ -347,7 +347,7 @@ TextLabel_8.Position = UDim2.new(0.497058809, 0, 0.5, 0)
 TextLabel_8.Size = UDim2.new(1.01176476, -20, 1, -20)
 TextLabel_8.ZIndex = 2
 TextLabel_8.Font = Enum.Font.GothamSemibold
-TextLabel_8.Text = "Coming soon"
+TextLabel_8.Text = "Auto Jump"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextScaled = true
 TextLabel_8.TextSize = 14.000
@@ -384,7 +384,7 @@ TextLabel_9.Position = UDim2.new(0.497058809, 0, 0.5, 0)
 TextLabel_9.Size = UDim2.new(1.01176476, -20, 1, -20)
 TextLabel_9.ZIndex = 2
 TextLabel_9.Font = Enum.Font.GothamSemibold
-TextLabel_9.Text = "Coming soon"
+TextLabel_9.Text = "Auto Mediate"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextScaled = true
 TextLabel_9.TextSize = 14.000
@@ -428,7 +428,7 @@ CloseButton.Image = "rbxassetid://6928031664"
 
 -- Scripts:
 
-local function JRJNH_fake_script() -- Gradient.LocalScript 
+local function UORYY_fake_script() -- Gradient.LocalScript 
 	local script = Instance.new('LocalScript', Gradient)
 
 	
@@ -506,8 +506,8 @@ local function JRJNH_fake_script() -- Gradient.LocalScript
 	
 	
 end
-coroutine.wrap(JRJNH_fake_script)()
-local function YJGX_fake_script() -- Button1.LocalScript 
+coroutine.wrap(UORYY_fake_script)()
+local function OGKZ_fake_script() -- Button1.LocalScript 
 	local script = Instance.new('LocalScript', Button1)
 
 	toggle = false
@@ -554,8 +554,8 @@ local function YJGX_fake_script() -- Button1.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YJGX_fake_script)()
-local function UQQHJU_fake_script() -- Button3.Script 
+coroutine.wrap(OGKZ_fake_script)()
+local function SSMEE_fake_script() -- Button3.Script 
 	local script = Instance.new('Script', Button3)
 
 	local button = script.Parent
@@ -572,8 +572,8 @@ local function UQQHJU_fake_script() -- Button3.Script
 	
 	
 end
-coroutine.wrap(UQQHJU_fake_script)()
-local function KAONCE_fake_script() -- Button3.LocalScript 
+coroutine.wrap(SSMEE_fake_script)()
+local function CSHDVX_fake_script() -- Button3.LocalScript 
 	local script = Instance.new('LocalScript', Button3)
 
 	toggle = false
@@ -620,8 +620,8 @@ local function KAONCE_fake_script() -- Button3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KAONCE_fake_script)()
-local function MTMB_fake_script() -- Button2.LocalScript 
+coroutine.wrap(CSHDVX_fake_script)()
+local function BSVJMW_fake_script() -- Button2.LocalScript 
 	local script = Instance.new('LocalScript', Button2)
 
 	toggle = false
@@ -668,8 +668,90 @@ local function MTMB_fake_script() -- Button2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MTMB_fake_script)()
-local function XNJIQAZ_fake_script() -- TextLabel_10.LocalScript 
+coroutine.wrap(BSVJMW_fake_script)()
+local function IWKFNXL_fake_script() -- Button_5.LocalScript 
+	local script = Instance.new('LocalScript', Button_5)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+				wait()
+	
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("Jomp")
+			end
+		end
+		if toggle == false then 
+			_G.Toggle = false
+			while _G.Toggle do
+				wait()
+	
+						game:GetService("ReplicatedStorage").StatEvent:FireServer("Jomp")
+					end
+			end
+	end)
+end
+coroutine.wrap(IWKFNXL_fake_script)()
+local function VVEU_fake_script() -- Button_6.LocalScript 
+	local script = Instance.new('LocalScript', Button_6)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+				wait()
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "Meditate" then
+						v.Parent = game.Players.LocalPlayer.Character
+					end
+				end
+	
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("Meditate")		end
+		end
+		if toggle == false then 
+			_G.Toggle = false
+			while _G.Toggle do
+				wait()
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.name == "Meditate" then
+						v.Parent = game.Players.LocalPlayer.Character
+					end
+				end
+	
+				game:GetService("ReplicatedStorage").StatEvent:FireServer("Meditate")				end
+			end
+	end)
+end
+coroutine.wrap(VVEU_fake_script)()
+local function HCSYO_fake_script() -- TextLabel_10.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_10)
 
 	while true do
@@ -687,16 +769,16 @@ local function XNJIQAZ_fake_script() -- TextLabel_10.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(XNJIQAZ_fake_script)()
-local function NOQLA_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(HCSYO_fake_script)()
+local function UEQRP_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(NOQLA_fake_script)()
-local function QZYJCK_fake_script() -- Gradient.LocalScript 
+coroutine.wrap(UEQRP_fake_script)()
+local function QMYEY_fake_script() -- Gradient.LocalScript 
 	local script = Instance.new('LocalScript', Gradient)
 
 	while true do
@@ -714,4 +796,4 @@ local function QZYJCK_fake_script() -- Gradient.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(QZYJCK_fake_script)()
+coroutine.wrap(QMYEY_fake_script)()
